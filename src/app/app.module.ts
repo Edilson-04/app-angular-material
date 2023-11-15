@@ -7,6 +7,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AmDemoComponent } from './ejemplos/am-demo/am-demo.component';
 import { PrincipalComponent } from './ejemplos/principal/principal.component';
 import { PaginaErrorComponent } from './ejemplos/pagina-error/pagina-error.component';
+import { MaterialModule } from './angular-material/material/material.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { PaginaErrorComponent } from './ejemplos/pagina-error/pagina-error.compo
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MaterialModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
